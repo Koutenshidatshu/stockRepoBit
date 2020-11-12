@@ -1,13 +1,22 @@
-# stockRepoBit]
 
-This is stockbit test 
+This is stockbit test
 
-using MVVM + interactor architecture
-for separate of concern in modeling architecture
-interactor use for small pieces for easy maintain and easy in testing
+## Requirements
+stockBit works with ios 10 above with swift 4.2 or above for CocoaPods/frameowork use support recomended using XCODE 11 above
 
-using unit testing 
+## Features
 
-Pod used
-* RxSwift
-* RxCocoa
+-Unit Test enabled
+-Integration Test enabled
+-Reactive RxSwift and RxCocoa
+-RxBlocking for testing purpose 
+
+### MVVM + I (Interactor) Archtecture
+
+* for separate of concern in modeling architecture
+* interactor use for small pieces for easy maintain and easy in testing
+
+## Installation
+
+### CocoaPods
+run pod install on in directory
