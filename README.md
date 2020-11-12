@@ -17,6 +17,7 @@ stockBit works with ios 10 above with swift 4.2 or above for CocoaPods/frameowor
 * interactor use for small pieces for easy maintain and easy in testing
 
 ## Installation
+Please using master branch in origin
 
 ### CocoaPods
 run pod install on in directory
