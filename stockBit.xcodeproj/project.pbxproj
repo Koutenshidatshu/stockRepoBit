@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,10 @@
 		BA73FB18255C22B50035FBCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA73FB16255C22B50035FBCF /* LaunchScreen.storyboard */; };
 		BA73FB23255C22B60035FBCF /* stockBitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA73FB22255C22B60035FBCF /* stockBitTests.swift */; };
 		BA73FB2E255C22B60035FBCF /* stockBitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA73FB2D255C22B60035FBCF /* stockBitUITests.swift */; };
+		BA73FB59255D957E0035FBCF /* GetCryptoLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA73FB58255D957E0035FBCF /* GetCryptoLists.swift */; };
+		BA73FB6B255D95DA0035FBCF /* GetCryptoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA73FB6A255D95DA0035FBCF /* GetCryptoListTests.swift */; };
+		BA73FB72255D96320035FBCF /* CryptoListApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA73FB71255D96320035FBCF /* CryptoListApi.swift */; };
+		BA73FB77255D97140035FBCF /* Observable+GetEmit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA73FB76255D97140035FBCF /* Observable+GetEmit.swift */; };
 		F9FE09A516A6B4EE6C96AF75 /* Pods_stockBit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B413425D0A35CFAE612D452C /* Pods_stockBit.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +62,10 @@
 		BA73FB29255C22B60035FBCF /* stockBitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = stockBitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA73FB2D255C22B60035FBCF /* stockBitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stockBitUITests.swift; sourceTree = "<group>"; };
 		BA73FB2F255C22B60035FBCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA73FB58255D957E0035FBCF /* GetCryptoLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCryptoLists.swift; sourceTree = "<group>"; };
+		BA73FB6A255D95DA0035FBCF /* GetCryptoListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCryptoListTests.swift; sourceTree = "<group>"; };
+		BA73FB71255D96320035FBCF /* CryptoListApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListApi.swift; sourceTree = "<group>"; };
+		BA73FB76255D97140035FBCF /* Observable+GetEmit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+GetEmit.swift"; sourceTree = "<group>"; };
 		C1653C3B131D4007BD8551BF /* Pods_stockBit_stockBitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stockBit_stockBitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB634C4A5A461E887636E28D /* Pods-stockBit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stockBit.release.xcconfig"; path = "Target Support Files/Pods-stockBit/Pods-stockBit.release.xcconfig"; sourceTree = "<group>"; };
 		FBB441A96A427E6A0CD38DDE /* Pods-stockBit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stockBit.debug.xcconfig"; path = "Target Support Files/Pods-stockBit/Pods-stockBit.debug.xcconfig"; sourceTree = "<group>"; };
@@ -101,7 +109,6 @@
 				9D82E7A7DFA664052BAC0877 /* Pods-stockBitTests.debug.xcconfig */,
 				654B23081B318FD961DE50E1 /* Pods-stockBitTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -130,6 +137,8 @@
 		BA73FB0A255C22B30035FBCF /* stockBit */ = {
 			isa = PBXGroup;
 			children = (
+				BA73FB6F255D961B0035FBCF /* Public */,
+				BA73FB57255D95400035FBCF /* Interactor */,
 				BA73FB0B255C22B30035FBCF /* AppDelegate.swift */,
 				BA73FB0D255C22B30035FBCF /* SceneDelegate.swift */,
 				BA73FB0F255C22B30035FBCF /* ViewController.swift */,
@@ -144,6 +153,8 @@
 		BA73FB21255C22B60035FBCF /* stockBitTests */ = {
 			isa = PBXGroup;
 			children = (
+				BA73FB56255D95150035FBCF /* Integration Test */,
+				BA73FB55255D950D0035FBCF /* UnitTest */,
 				BA73FB22255C22B60035FBCF /* stockBitTests.swift */,
 				BA73FB24255C22B60035FBCF /* Info.plist */,
 			);
@@ -157,6 +168,46 @@
 				BA73FB2F255C22B60035FBCF /* Info.plist */,
 			);
 			path = stockBitUITests;
+			sourceTree = "<group>";
+		};
+		BA73FB55255D950D0035FBCF /* UnitTest */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UnitTest;
+			sourceTree = "<group>";
+		};
+		BA73FB56255D95150035FBCF /* Integration Test */ = {
+			isa = PBXGroup;
+			children = (
+				BA73FB6A255D95DA0035FBCF /* GetCryptoListTests.swift */,
+			);
+			path = "Integration Test";
+			sourceTree = "<group>";
+		};
+		BA73FB57255D95400035FBCF /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				BA73FB58255D957E0035FBCF /* GetCryptoLists.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		BA73FB6F255D961B0035FBCF /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				BA73FB70255D96210035FBCF /* API */,
+				BA73FB76255D97140035FBCF /* Observable+GetEmit.swift */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		BA73FB70255D96210035FBCF /* API */ = {
+			isa = PBXGroup;
+			children = (
+				BA73FB71255D96320035FBCF /* CryptoListApi.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		D59B7AD6640E83D9B2385292 /* Frameworks */ = {
@@ -407,9 +458,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA73FB77255D97140035FBCF /* Observable+GetEmit.swift in Sources */,
 				BA73FB10255C22B30035FBCF /* ViewController.swift in Sources */,
 				BA73FB0C255C22B30035FBCF /* AppDelegate.swift in Sources */,
 				BA73FB0E255C22B30035FBCF /* SceneDelegate.swift in Sources */,
+				BA73FB59255D957E0035FBCF /* GetCryptoLists.swift in Sources */,
+				BA73FB72255D96320035FBCF /* CryptoListApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +472,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA73FB23255C22B60035FBCF /* stockBitTests.swift in Sources */,
+				BA73FB6B255D95DA0035FBCF /* GetCryptoListTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
