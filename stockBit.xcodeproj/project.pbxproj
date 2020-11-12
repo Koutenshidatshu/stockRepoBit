@@ -26,6 +26,9 @@
 		BA73FB90255DA01D0035FBCF /* CryptoListProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA73FB8F255DA01D0035FBCF /* CryptoListProvider.swift */; };
 		BA73FB95255DA0300035FBCF /* CryptoListProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA73FB94255DA0300035FBCF /* CryptoListProviderTests.swift */; };
 		BA73FB9B255DA0730035FBCF /* CryptoListApiMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA73FB9A255DA0730035FBCF /* CryptoListApiMock.swift */; };
+		BA73FBA4255DA4610035FBCF /* CryptoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA73FBA3255DA4610035FBCF /* CryptoViewModel.swift */; };
+		BA73FBAC255DA6E40035FBCF /* CryptoCoinTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA73FBAA255DA6E40035FBCF /* CryptoCoinTableViewCell.swift */; };
+		BA73FBAD255DA6E40035FBCF /* CryptoCoinTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA73FBAB255DA6E40035FBCF /* CryptoCoinTableViewCell.xib */; };
 		F9FE09A516A6B4EE6C96AF75 /* Pods_stockBit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B413425D0A35CFAE612D452C /* Pods_stockBit.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +79,9 @@
 		BA73FB8F255DA01D0035FBCF /* CryptoListProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListProvider.swift; sourceTree = "<group>"; };
 		BA73FB94255DA0300035FBCF /* CryptoListProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListProviderTests.swift; sourceTree = "<group>"; };
 		BA73FB9A255DA0730035FBCF /* CryptoListApiMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListApiMock.swift; sourceTree = "<group>"; };
+		BA73FBA3255DA4610035FBCF /* CryptoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewModel.swift; sourceTree = "<group>"; };
+		BA73FBAA255DA6E40035FBCF /* CryptoCoinTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCoinTableViewCell.swift; sourceTree = "<group>"; };
+		BA73FBAB255DA6E40035FBCF /* CryptoCoinTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CryptoCoinTableViewCell.xib; sourceTree = "<group>"; };
 		C1653C3B131D4007BD8551BF /* Pods_stockBit_stockBitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stockBit_stockBitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB634C4A5A461E887636E28D /* Pods-stockBit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stockBit.release.xcconfig"; path = "Target Support Files/Pods-stockBit/Pods-stockBit.release.xcconfig"; sourceTree = "<group>"; };
 		FBB441A96A427E6A0CD38DDE /* Pods-stockBit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stockBit.debug.xcconfig"; path = "Target Support Files/Pods-stockBit/Pods-stockBit.debug.xcconfig"; sourceTree = "<group>"; };
@@ -147,12 +153,12 @@
 		BA73FB0A255C22B30035FBCF /* stockBit */ = {
 			isa = PBXGroup;
 			children = (
+				BA73FBA8255DA6C60035FBCF /* View */,
+				BA73FBA2255DA44D0035FBCF /* View Model */,
 				BA73FB6F255D961B0035FBCF /* Public */,
 				BA73FB57255D95400035FBCF /* Interactor */,
 				BA73FB0B255C22B30035FBCF /* AppDelegate.swift */,
 				BA73FB0D255C22B30035FBCF /* SceneDelegate.swift */,
-				BA73FB0F255C22B30035FBCF /* ViewController.swift */,
-				BA73FB11255C22B30035FBCF /* Main.storyboard */,
 				BA73FB14255C22B50035FBCF /* Assets.xcassets */,
 				BA73FB16255C22B50035FBCF /* LaunchScreen.storyboard */,
 				BA73FB19255C22B50035FBCF /* Info.plist */,
@@ -231,6 +237,33 @@
 				BA73FB9A255DA0730035FBCF /* CryptoListApiMock.swift */,
 			);
 			path = Mock;
+			sourceTree = "<group>";
+		};
+		BA73FBA2255DA44D0035FBCF /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				BA73FBA3255DA4610035FBCF /* CryptoViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		BA73FBA8255DA6C60035FBCF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BA73FBA9255DA6CF0035FBCF /* Cell */,
+				BA73FB0F255C22B30035FBCF /* ViewController.swift */,
+				BA73FB11255C22B30035FBCF /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BA73FBA9255DA6CF0035FBCF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BA73FBAA255DA6E40035FBCF /* CryptoCoinTableViewCell.swift */,
+				BA73FBAB255DA6E40035FBCF /* CryptoCoinTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		D59B7AD6640E83D9B2385292 /* Frameworks */ = {
@@ -352,6 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA73FB18255C22B50035FBCF /* LaunchScreen.storyboard in Resources */,
+				BA73FBAD255DA6E40035FBCF /* CryptoCoinTableViewCell.xib in Resources */,
 				BA73FB15255C22B50035FBCF /* Assets.xcassets in Resources */,
 				BA73FB13255C22B30035FBCF /* Main.storyboard in Resources */,
 			);
@@ -482,10 +516,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA73FB77255D97140035FBCF /* Observable+GetEmit.swift in Sources */,
+				BA73FBAC255DA6E40035FBCF /* CryptoCoinTableViewCell.swift in Sources */,
 				BA73FB10255C22B30035FBCF /* ViewController.swift in Sources */,
 				BA73FB0C255C22B30035FBCF /* AppDelegate.swift in Sources */,
 				BA73FB90255DA01D0035FBCF /* CryptoListProvider.swift in Sources */,
 				BA73FB86255D98450035FBCF /* CryptoResponse.swift in Sources */,
+				BA73FBA4255DA4610035FBCF /* CryptoViewModel.swift in Sources */,
 				BA73FB0E255C22B30035FBCF /* SceneDelegate.swift in Sources */,
 				BA73FB59255D957E0035FBCF /* GetCryptoLists.swift in Sources */,
 				BA73FB72255D96320035FBCF /* CryptoListApi.swift in Sources */,

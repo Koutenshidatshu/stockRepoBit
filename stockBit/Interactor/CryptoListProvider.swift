@@ -23,3 +23,8 @@ struct CryptoListProviderImpl : CryptoListProvider{
         return requester.request().asObservable()
     }
 }
+struct CryptoListProviderFactory {
+    static func create() -> CryptoListProvider {
+        return CryptoListProviderImpl(service: GetCryptoListsImpl())
+    }
+}
