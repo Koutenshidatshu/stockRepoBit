@@ -33,8 +33,16 @@ class CryptoViewModel {
         return blockChainList[index].coinInfo
     }
     
+    func getPriceItemAt(index: Int) -> Usd {
+        return blockChainList[index].raw.usd
+    }
+    
     func coinCount() -> Int {
         return blockChainList.count
+    }
+    
+    func getCoinName(index: Int) -> String {
+        return blockChainList[index].coinInfo.name
     }
 }
 

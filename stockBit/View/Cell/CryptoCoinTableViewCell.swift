@@ -13,16 +13,29 @@ class CryptoCoinTableViewCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var fullNameLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
-    
+    private var tempPrice: Double = 0.0
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
     
-    func setup(coin: CoinInfo) {
-        priceLabel.text = "$" + "0"
+    func setup(coin: CoinInfo, price: Double) {
+        priceLabel.text = "$ " + "\(price)"
         nameLabel.text = coin.name
         fullNameLabel.text = coin.fullName
+        tempPrice = price
+    }
+    
+    func updatePrice(price: Double) {
+        updateTickerView(price: price)
+        priceLabel.text = "$ " + "\(price)"
+        tempPrice = price
+    }
+    
+    private func updateTickerView(price: Double) {
+        if tempPrice > price {
+            tickerView.backgroundColor = #colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)
+        } else if tempPrice < price { tickerView.backgroundColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1) }
     }
 
 }
