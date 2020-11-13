@@ -2,7 +2,7 @@
 This is stockbit test
 
 ## Requirements
-stockBit works with ios 10 above with swift 4.2 or above for CocoaPods/frameowork use support recomended using XCODE 11 above
+stockBit works with ios 13.0 above with swift 4.2 or above for CocoaPods/frameowork use support recomended using XCODE 11.5 above
 
 ## Features
 
