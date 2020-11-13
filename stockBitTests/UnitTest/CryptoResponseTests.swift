@@ -47,6 +47,9 @@ class CryptoResponseTests: XCTestCase {
         XCTAssertEqual(result!.blockChainData.first?.coinInfo.fullName, "Bitcoin")
         XCTAssertEqual(result!.blockChainData.last?.coinInfo.name, "ETH")
         XCTAssertEqual(result!.blockChainData.last?.coinInfo.fullName, "Ethereum")
+        
+        XCTAssertEqual(result?.blockChainData.first?.raw.usd.price, 16040.68)
+        XCTAssertEqual(result?.blockChainData.last?.raw.usd.price, 457.0)
     }
     
     func testWithInvalidData() {
