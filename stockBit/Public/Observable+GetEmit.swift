@@ -11,7 +11,7 @@ import RxBlocking
 
 extension Observable {
     func firstEmit() -> Element? {
-        return try? toBlocking().first()
+        return try! toBlocking().first()
     }
     
     func allEmit() -> [Element]? {
