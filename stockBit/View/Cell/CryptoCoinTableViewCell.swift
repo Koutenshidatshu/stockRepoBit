@@ -34,7 +34,7 @@ class CryptoCoinTableViewCell: UITableViewCell {
     
     private func updateTickerView(price: Double) {
         if tempPrice > price {
-            tickerView.backgroundColor = #colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)
+            tickerView.backgroundColor = #colorLiteral(red: 0.09207006544, green: 0.6476076245, blue: 0.2091273367, alpha: 1)
         } else if tempPrice < price { tickerView.backgroundColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1) }
     }
 
