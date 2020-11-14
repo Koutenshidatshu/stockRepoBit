@@ -61,7 +61,7 @@ class ViewController: UIViewController {
     private func getCoinArray() -> [String] {
         var arrayCoin = [String]()
         
-        for i in 0...viewModel.coinCount() - 1 {
+        for i in 0..<viewModel.coinCount()  {
             let coinName = viewModel.getCoinName(index: i)
             arrayCoin.append("5~CCCAGG~\(coinName)~USD")
             
@@ -70,8 +70,9 @@ class ViewController: UIViewController {
     }
     
     deinit {
-      socket?.disconnect()
-      socket?.delegate = nil
+        socket?.disconnect()
+        socket?.delegate = nil
+        print("$$$$ deinit")
     }
 }
 
@@ -87,6 +88,13 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         return cell ?? UITableViewCell()
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = NewsViewController()
+        let name = viewModel.itemAt(index: indexPath.row).name
+        vc.newsTappedName = name
+        present(vc, animated: false, completion: nil)
+        
+    }
     
 }
 
@@ -97,13 +105,13 @@ extension ViewController : WebSocketDelegate {
         case .text(let str):
             print("@@@", str)
             guard let data = str.data(using: .utf16),
-                  let jsonData = try? JSONSerialization.jsonObject(with: data),
-                  let jsonDict = jsonData as? [String: Any],
-                  let messageType = jsonDict["TYPE"] as? String else {
-                return
+                let jsonData = try? JSONSerialization.jsonObject(with: data),
+                let jsonDict = jsonData as? [String: Any],
+                let messageType = jsonDict["TYPE"] as? String else {
+                    return
             }
             if messageType == "5",
-               let price = jsonDict["PRICE"] as? Double {
+                let price = jsonDict["PRICE"] as? Double {
                 if let type = jsonDict["FROMSYMBOL"] as? String {
                     for i in 0...viewModel.coinCount() - 1 {
                         if type == viewModel.itemAt(index: i).name {

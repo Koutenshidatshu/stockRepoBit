@@ -41,3 +41,9 @@ class NewsViewModel {
     }
     
 }
+struct NewsViewModelFactory {
+    static func create() -> NewsViewModel {
+        let provider = NewsProviderFactory.create()
+        return NewsViewModel(provider: provider)
+    }
+}

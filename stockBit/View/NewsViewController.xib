@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewsViewController" customModule="stockBit" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="rxs-hc-9Bh" id="1si-pe-PwD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rxs-hc-9Bh">
+                    <rect key="frame" x="0.0" y="116" width="414" height="746"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="1uq-sA-xxF"/>
+                        <outlet property="delegate" destination="-1" id="xGw-KR-8nF"/>
+                        <outlet property="prefetchDataSource" destination="-1" id="S2M-on-Ewr"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEWS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HqI-n8-Nyp">
+                    <rect key="frame" x="177.5" y="60" width="59" height="24"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rxs-hc-9Bh" secondAttribute="trailing" id="C8e-3N-55f"/>
+                <constraint firstItem="HqI-n8-Nyp" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="FQN-U7-Ted"/>
+                <constraint firstItem="rxs-hc-9Bh" firstAttribute="top" secondItem="HqI-n8-Nyp" secondAttribute="bottom" constant="32" id="HjC-SB-7Km"/>
+                <constraint firstItem="HqI-n8-Nyp" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="MNW-7M-R1R"/>
+                <constraint firstItem="rxs-hc-9Bh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="WNx-lt-Y7V"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="rxs-hc-9Bh" secondAttribute="bottom" id="jIj-vw-DrV"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="132" y="87"/>
+        </view>
+    </objects>
+</document>
