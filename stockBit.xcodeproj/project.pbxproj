@@ -13,6 +13,9 @@
 		BA68F7DB25604ABA008EA9CD /* GetNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA68F7DA25604ABA008EA9CD /* GetNews.swift */; };
 		BA68F7DF25604E65008EA9CD /* NewsRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA68F7DE25604E65008EA9CD /* NewsRequester.swift */; };
 		BA68F7E125604F63008EA9CD /* NewstResponseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA68F7E025604F63008EA9CD /* NewstResponseTest.swift */; };
+		BA68F7E32560526A008EA9CD /* NewsProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA68F7E22560526A008EA9CD /* NewsProviderTests.swift */; };
+		BA68F7E7256052BD008EA9CD /* NewsApiMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA68F7E6256052BD008EA9CD /* NewsApiMock.swift */; };
+		BA68F7E925605313008EA9CD /* NewsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA68F7E825605313008EA9CD /* NewsProvider.swift */; };
 		BA73FB0C255C22B30035FBCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA73FB0B255C22B30035FBCF /* AppDelegate.swift */; };
 		BA73FB0E255C22B30035FBCF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA73FB0D255C22B30035FBCF /* SceneDelegate.swift */; };
 		BA73FB10255C22B30035FBCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA73FB0F255C22B30035FBCF /* ViewController.swift */; };
@@ -64,6 +67,9 @@
 		BA68F7DA25604ABA008EA9CD /* GetNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNews.swift; sourceTree = "<group>"; };
 		BA68F7DE25604E65008EA9CD /* NewsRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRequester.swift; sourceTree = "<group>"; };
 		BA68F7E025604F63008EA9CD /* NewstResponseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewstResponseTest.swift; sourceTree = "<group>"; };
+		BA68F7E22560526A008EA9CD /* NewsProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsProviderTests.swift; sourceTree = "<group>"; };
+		BA68F7E6256052BD008EA9CD /* NewsApiMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsApiMock.swift; sourceTree = "<group>"; };
+		BA68F7E825605313008EA9CD /* NewsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsProvider.swift; sourceTree = "<group>"; };
 		BA73FB08255C22B30035FBCF /* stockBit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stockBit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA73FB0B255C22B30035FBCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA73FB0D255C22B30035FBCF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -199,8 +205,9 @@
 			children = (
 				BA73FB99255DA05D0035FBCF /* Mock */,
 				BA73FB8A255D985A0035FBCF /* CryptoResponseTests.swift */,
-				BA68F7E025604F63008EA9CD /* NewstResponseTest.swift */,
 				BA73FB94255DA0300035FBCF /* CryptoListProviderTests.swift */,
+				BA68F7E22560526A008EA9CD /* NewsProviderTests.swift */,
+				BA68F7E025604F63008EA9CD /* NewstResponseTest.swift */,
 			);
 			path = UnitTest;
 			sourceTree = "<group>";
@@ -222,6 +229,7 @@
 				BA73FB8F255DA01D0035FBCF /* CryptoListProvider.swift */,
 				BA68F7DA25604ABA008EA9CD /* GetNews.swift */,
 				BA68F7DE25604E65008EA9CD /* NewsRequester.swift */,
+				BA68F7E825605313008EA9CD /* NewsProvider.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -247,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				BA73FB9A255DA0730035FBCF /* CryptoListApiMock.swift */,
+				BA68F7E6256052BD008EA9CD /* NewsApiMock.swift */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -539,6 +548,7 @@
 				BA73FB0E255C22B30035FBCF /* SceneDelegate.swift in Sources */,
 				BA73FB59255D957E0035FBCF /* GetCryptoLists.swift in Sources */,
 				BA73FB72255D96320035FBCF /* CryptoListApi.swift in Sources */,
+				BA68F7E925605313008EA9CD /* NewsProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,9 +558,11 @@
 			files = (
 				BA73FB23255C22B60035FBCF /* stockBitTests.swift in Sources */,
 				BA68F7D925604A5B008EA9CD /* GetNewsTests.swift in Sources */,
+				BA68F7E7256052BD008EA9CD /* NewsApiMock.swift in Sources */,
 				BA68F7E125604F63008EA9CD /* NewstResponseTest.swift in Sources */,
 				BA73FB6B255D95DA0035FBCF /* GetCryptoListTests.swift in Sources */,
 				BA73FB8B255D985A0035FBCF /* CryptoResponseTests.swift in Sources */,
+				BA68F7E32560526A008EA9CD /* NewsProviderTests.swift in Sources */,
 				BA73FB95255DA0300035FBCF /* CryptoListProviderTests.swift in Sources */,
 				BA73FB9B255DA0730035FBCF /* CryptoListApiMock.swift in Sources */,
 			);
