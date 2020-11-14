@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		A8FBE6675ADBB03899F23655 /* Pods_stockBitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3802196E5BAA3731880C7866 /* Pods_stockBitTests.framework */; };
 		ADE6EE8978540C58894236CF /* Pods_stockBit_stockBitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1653C3B131D4007BD8551BF /* Pods_stockBit_stockBitUITests.framework */; };
+		BA68F7D925604A5B008EA9CD /* GetNewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA68F7D825604A5B008EA9CD /* GetNewsTests.swift */; };
+		BA68F7DB25604ABA008EA9CD /* GetNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA68F7DA25604ABA008EA9CD /* GetNews.swift */; };
 		BA73FB0C255C22B30035FBCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA73FB0B255C22B30035FBCF /* AppDelegate.swift */; };
 		BA73FB0E255C22B30035FBCF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA73FB0D255C22B30035FBCF /* SceneDelegate.swift */; };
 		BA73FB10255C22B30035FBCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA73FB0F255C22B30035FBCF /* ViewController.swift */; };
@@ -56,6 +58,8 @@
 		9D82E7A7DFA664052BAC0877 /* Pods-stockBitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stockBitTests.debug.xcconfig"; path = "Target Support Files/Pods-stockBitTests/Pods-stockBitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ACC85D64B87DF13745ABB9C0 /* Pods-stockBit-stockBitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stockBit-stockBitUITests.release.xcconfig"; path = "Target Support Files/Pods-stockBit-stockBitUITests/Pods-stockBit-stockBitUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B413425D0A35CFAE612D452C /* Pods_stockBit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stockBit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA68F7D825604A5B008EA9CD /* GetNewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNewsTests.swift; sourceTree = "<group>"; };
+		BA68F7DA25604ABA008EA9CD /* GetNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNews.swift; sourceTree = "<group>"; };
 		BA73FB08255C22B30035FBCF /* stockBit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stockBit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA73FB0B255C22B30035FBCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA73FB0D255C22B30035FBCF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -200,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				BA73FB6A255D95DA0035FBCF /* GetCryptoListTests.swift */,
+				BA68F7D825604A5B008EA9CD /* GetNewsTests.swift */,
 			);
 			path = "Integration Test";
 			sourceTree = "<group>";
@@ -210,6 +215,7 @@
 				BA73FB58255D957E0035FBCF /* GetCryptoLists.swift */,
 				BA73FB85255D98450035FBCF /* CryptoResponse.swift */,
 				BA73FB8F255DA01D0035FBCF /* CryptoListProvider.swift */,
+				BA68F7DA25604ABA008EA9CD /* GetNews.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -518,6 +524,7 @@
 				BA73FB77255D97140035FBCF /* Observable+GetEmit.swift in Sources */,
 				BA73FBAC255DA6E40035FBCF /* CryptoCoinTableViewCell.swift in Sources */,
 				BA73FB10255C22B30035FBCF /* ViewController.swift in Sources */,
+				BA68F7DB25604ABA008EA9CD /* GetNews.swift in Sources */,
 				BA73FB0C255C22B30035FBCF /* AppDelegate.swift in Sources */,
 				BA73FB90255DA01D0035FBCF /* CryptoListProvider.swift in Sources */,
 				BA73FB86255D98450035FBCF /* CryptoResponse.swift in Sources */,
@@ -533,6 +540,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA73FB23255C22B60035FBCF /* stockBitTests.swift in Sources */,
+				BA68F7D925604A5B008EA9CD /* GetNewsTests.swift in Sources */,
 				BA73FB6B255D95DA0035FBCF /* GetCryptoListTests.swift in Sources */,
 				BA73FB8B255D985A0035FBCF /* CryptoResponseTests.swift in Sources */,
 				BA73FB95255DA0300035FBCF /* CryptoListProviderTests.swift in Sources */,
