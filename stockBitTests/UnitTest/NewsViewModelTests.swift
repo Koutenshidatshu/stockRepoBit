@@ -35,7 +35,7 @@ class NewsViewModelTests: XCTestCase {
         
         XCTAssertNotNil(result)
         XCTAssertGreaterThan(result.count, 1)
-        XCTAssertEqual(viewModel.newsCount(), 197)
+        XCTAssertEqual(viewModel.newsCount(), 19)
         
     }
     
